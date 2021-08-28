@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<p id="demo">les gens.e.ss tou-te-s auttr·e·s</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var res = str.replace(/[-\.·][nt]?e[-\.·]s/g, "s");
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+</body>
+</html>
